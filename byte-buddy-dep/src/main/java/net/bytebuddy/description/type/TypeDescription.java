@@ -1438,7 +1438,7 @@ public interface TypeDescription extends TypeDefinition, ByteCodeElement, TypeVa
                 INTERFACE(false, false, false, false) {
                     /** {@inheritDoc} */
                     public Boolean onNonGenericType(Generic typeDescription) {
-                        return super.onNonGenericType(typeDescription) && typeDescription.isInterface();
+                        return super.onTypeVariable(typeDescription) && typeDescription.isInterface();
                     }
 
                     /** {@inheritDoc} */
